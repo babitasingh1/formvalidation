@@ -1,0 +1,16 @@
+form {
+  height: auto;
+  margin-left: 50px;
+  padding: 20px;
+  width: 500px;
+  background-color: beige;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  margin: auto;
+  display: block;
+}

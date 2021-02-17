@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>Create Form</title>
+    <link rel="stylesheet" href="./styles/form.css" />
+</head>
+<body>
+    
+    <form >
+        <h1>Fill your information</h1>
+        <label for="firstname" >First Name:  </label>                   
+        <input id="firstname" type="text" name="firstName" placeholder="First name" required> <br><br>
+        
+        <label for="lastname" >Last Name:</label>              
+        <input type="text" id="lastname" name="lastName" placeholder="Last name" required>
+        <br><br>
+
+        <label >Telephone no.:</label>  
+        <input type="tel" name="telephone" placeholder="telephone" required pattern="[0-9]{10}"> <br><br>
+        <label>Email Id: </label>
+        <input type="email" name="email" placeholder="email" required>
+        <br><br>
+        <label >Password: </label>
+        <input type="password" id="pwd" placeholder="password" required minlength="8"> <br><br>
+        <label >Confirm Password:</label>
+        <input type="password" name="password" id="confirmpwd" placeholder="confirm password" required>
+        <br><br>
+        <label >Linkedin Url: </label>      
+        <input type="url" name="linkedin" placeholder="Linkedin" />
+        <br><br>
+        <!--drop down-->
+        <label > Country:</label>
+        <select name="country" required>
+            <option> </option>
+            <option value="Australia">Australia</option>
+            <option>Brazil</option>
+            <option>India</option>
+            <option>Netherlands</option>
+        </select>
+        
+        <br><br>
+        <!--radio boxes -->
+        <fieldset >
+            <legend>Marital status </legend>
+           
+            <input type="radio" id="radio1" name="maritalstatus" value="married"><label>Married</label>
+            <input type="radio" id="radio2" name="maritalstatus" value="unMarried"><label>UnMarried</label>
+        </fieldset>
+        <br><br>
+        <!--Check boxes-->
+        <fieldset id="skillset">
+            <legend>Skillset</legend>
+            
+            <input type="checkbox" name="skills" value="Java"><label>Java</label>
+            <input type="checkbox" name="skills" value="JavaScript"><label>JavaScript</label>
+            <input type="checkbox" name="skills" value="C++"><label>C++</label>
+            <input type="checkbox" name="skills" value="HTML"><label>HTML</label>
+        </fieldset>
+        <br><br>
+        <label for="otherinfo">Other Info:</label> 
+        <textarea id="otherinfo" name="otherinfo"></textarea> 
+     
+        
+    
+    <br><br>
+        <button>Submit</button>
+    </form>
+    <script src="./scripts/form.js"></script>
+</body>
+</html>
